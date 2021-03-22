@@ -1,1 +1,69 @@
-<p>contact works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L2_TAI</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <form  id="form1">
+ <label for="form1" class="form-label">Uzupełnij dane:</label>
+ <div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Imię:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Podaj imię">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Nazwisko:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Podaj nazwisko">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput3" class="form-label">Email:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Podaj email">
+</div>
+<div class="mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Płeć:</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Mężczyzna
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Kobieta
+        </label>
+      </div>
+    </div>
+</div>
+  <div class="mb-3">
+  <label for="formGroupExampleInput3" class="form-label">Wiek:</label>
+  <input type="number" value="18" min="1" max="150" step="1"/>
+</div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput3" class="form-label">Stan cywilny:</label>
+  <select class="form-select" aria-label="Default select example">
+	  <option selected>Podaj stan</option>
+	  <option value="1">Kawaler/Panna</option>
+	  <option value="2">W związku</option>
+  </select>
+  </div>
+  <div class="col-12">
+    <button type="clear" class="btn btn-secondary">Wyczyść</button>
+    <button type="submit" class="btn btn-primary">Wyślij</button>
+  </div>
+ </form>
+ 
+ <div class="scroll">
+   <button class="btn btn-success">Do góry</button>
+</div>
+
+ 
+ 
+ <script src="js/script.js"></script>
+ <script src="js/scroll.js"></script>
+
+</body>
+</html>

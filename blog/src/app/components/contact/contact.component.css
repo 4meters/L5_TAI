@@ -1,0 +1,18 @@
+body {
+	   background-color: pink;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.img {
+    width: 100px;
+    height: auto;
+}
+.scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+
