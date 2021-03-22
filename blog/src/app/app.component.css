@@ -1,0 +1,8 @@
+body {
+  background-color: #97becd;
+}
+.footerStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
