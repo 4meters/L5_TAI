@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-	<link rel="stylesheet" href="home.component.css">
-</head>
-
-<body>
-<p>blog works!</p>
 <div *ngFor="let item of items$ | filter: filterText">
     <blog-item [image]="item.url" [text]="item.title">
     </blog-item>
 </div>
-</body>

@@ -1,8 +1,14 @@
-import { SummaryPipe } from './summary.pipe';
+import {Pipe, PipeTransform} from '@angular/core';
 
-describe('SummaryPipe', () => {
-  it('create an instance', () => {
-    const pipe = new SummaryPipe();
-    expect(pipe).toBeTruthy();
-  });
-});
+@Pipe({
+  name: 'summary'
+})
+export class SummaryPipe implements PipeTransform {
+
+  transform(value: string, limit: any): any {
+    if (!value) {
+      return null;
+    }
+    return value.substr(0, limit) + '...';
+  }
+}

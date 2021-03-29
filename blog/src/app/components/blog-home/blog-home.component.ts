@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-home.component.css']
 })
 export class BlogHomeComponent implements OnInit {
-  filterText: string;
+
+  filterText: string | undefined;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   getName($event: string) {
-   this.filterText = $event;
+    this.filterText = $event;
   }
-  
 }
