@@ -7,8 +7,10 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class BlogItemComponent implements OnInit {
 
+  @Input() id: number;
   @Input() image: string | undefined;
   @Input() text: string | undefined;
+  @Input() title= ' ';
 
   constructor() { }
 
